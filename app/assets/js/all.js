@@ -1,7 +1,7 @@
 $(function() {
   console.log('Hello Bootstrap5');
 });
-var swiper = new Swiper("#codeSwiper", {
+const swiper = new Swiper("#codeSwiper", {
   slideClass: "code-swiper-slide",
   slidesPerView: "auto",
   spaceBetween: 8,
@@ -20,4 +20,19 @@ var swiper = new Swiper("#codeSwiper", {
   loop: true
 
 });
-console.log(swiper);
+
+
+const classSwiper = new Swiper("#classSwiper", {
+  slideClass: "class-swiper-slide",
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  centeredSlides: true,
+  breakpoints: {
+    992: {
+      slidesPerView: "auto",
+      spaceBetween: 48,
+      centeredSlides: false,
+    },
+  },
+
+});

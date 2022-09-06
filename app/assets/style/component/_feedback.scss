@@ -1,0 +1,106 @@
+.feedback-section{
+  background-image: url(../images/bg_share.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include pad{
+    background-image:none
+  }
+}
+.card-rounded{
+  padding: 32px;
+  border-radius: 24px 24px 24px 0;
+  @include pad{
+    padding: 24px;
+  }
+}
+.student-cart::before{
+  content: "";
+  position: absolute;
+  border: 1px solid #fff;
+  width: 90%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translate(-10px,10px);
+  z-index: -1;
+  border-radius: 24px;
+  @include pad{
+    transform: translate(6px,6px);
+
+  }
+}
+
+.student-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 32px;
+  transform: translate(0,-50%);
+  @include pad{
+    width: 80px;
+    height: 80px;
+    right: 24px;
+    transform: translate(0,-30%);
+  }
+  
+}
+.student-cart-img{
+  border-radius: 24px;
+}
+.navigation{
+  color: #62db54;
+  background-color: black;
+  border: none;
+  margin-left:18px ;
+  margin-right: 18px;
+  span{
+    display: block;
+  }
+}
+.student-talk{
+  margin-left:-80px; 
+  margin-bottom:-48px;
+  @include pad{
+    margin-top: 45px;
+    margin-left:0; 
+    margin-bottom:0;
+  }
+}
+.pagination{
+  background-color: #62db54;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left:8px ;
+  margin-right: 8px;
+}
+.pagination-box{
+  position: absolute;
+  top: 0;
+  left: 25%;
+  @include pad{
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}
+
+.subscript{
+  background-color: #202020;
+  border-radius: 24px;
+  span{
+    font-size: 103px;
+  }
+}
+.subscript-btn{
+  margin-top: 16px;
+  border: 1px solid #fff;
+  padding: 8px 32px;
+  font-size: 18px;
+  line-height: 26px;
+  border-radius: 8px;
+  background-color: #202020;
+  color:#fff
+}

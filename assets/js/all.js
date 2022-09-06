@@ -1,7 +1,9 @@
-$(function() {
+"use strict";
+
+$(function () {
   console.log('Hello Bootstrap5');
 });
-const swiper = new Swiper("#codeSwiper", {
+var swiper = new Swiper("#codeSwiper", {
   slideClass: "code-swiper-slide",
   slidesPerView: "auto",
   spaceBetween: 8,
@@ -9,8 +11,8 @@ const swiper = new Swiper("#codeSwiper", {
   breakpoints: {
     992: {
       slidesPerView: "auto",
-      spaceBetween: 16,
-    },
+      spaceBetween: 16
+    }
   },
   autoplay: {
     delay: 5000,
@@ -18,11 +20,8 @@ const swiper = new Swiper("#codeSwiper", {
     pauseOnMouseEnter: true
   },
   loop: true
-
 });
-
-
-const classSwiper = new Swiper("#classSwiper", {
+var classSwiper = new Swiper("#classSwiper", {
   slideClass: "class-swiper-slide",
   slidesPerView: "auto",
   spaceBetween: 16,
@@ -31,8 +30,8 @@ const classSwiper = new Swiper("#classSwiper", {
     992: {
       slidesPerView: "auto",
       spaceBetween: 48,
-      centeredSlides: false,
-    },
-  },
-
+      centeredSlides: false
+    }
+  }
 });
+//# sourceMappingURL=all.js.map

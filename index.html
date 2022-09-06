@@ -1,10 +1,54 @@
----
-title: Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<!-- banner -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Index
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-border sticky-top navbar-expand-lg navbar-dark bg-gray2d py-6">
+    <div class="container-xxl justify-content-between  align-items-center ">
+      <h1 class="mb-0">
+        <a class="logo-img" class="navbar-brand" href="#">CodingHome</a>
+      </h1>
+      <button class="navbar-toggler border-0 py-2 px-1 py-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="navbar-hamburger bg-success mb-1"></div>
+        <div class="navbar-hamburger bg-success"></div>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end " id="navbarNav">
+        <ul class="navbar-nav nav-ul-rwd pt-6 pt-lg-0">
+          <li class="nav-item pt-6 pt-lg-0">
+            <a class="nav-link text-center nav-alink-rwd text-white active " aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center nav-alink-rwd  " href="/class.html">課程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex nav-alink-rwd align-items-center justify-content-center" href="#">
+              <span class="material-icons ">
+                account_circle
+              </span>
+              登入
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- banner -->
 <section class="container-fluid d-flex banner justify-content-center align-items-center">
   <div class="row g-0 justify-content-center align-items-center w-100">
     <div class="col-12 col-md-6 banner-box">
@@ -390,3 +434,13 @@ current: index
 <section class="subscript">
 
 </section>
+
+    <footer class="footer bg-gray1a">
+      <p class="mb-0 footer-text">Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
